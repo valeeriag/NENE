@@ -1,0 +1,162 @@
+@import url(styles.css);
+
+.container-navbar {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+
+}
+.navbarLogo{
+    display: flex;
+    align-items: center;
+}
+.navbarLogo img{  
+    height: 60px;
+    margin-right: 20px;
+}
+.navbarLogo span{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #6a4c93; 
+    font-family: "Nunito", sans-serif;
+    font-size: 500;
+
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+} 
+.navbar-nav >* {
+    margin-left: 50px;
+}
+.navList{
+    display: flex;
+    list-style: none;
+}
+.navLink {
+    margin-left: 40px;
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+.navLink a {
+    color: #1982c4;
+    position: relative;
+}
+.navLink a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: var(#8ac926);
+    opacity: 0;
+    transition: all 0.3s ease-in-out; 
+}
+.navLink:hover a::after {
+    opacity: 1;
+}
+.searchIcon img {
+    height: 28px;
+}
+
+.navbarToggle-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.navbarMovile-menu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 895px) {
+    .navList{
+        display: none;
+    }
+
+    .navbar-nav>*{
+        margin-left: 20px;
+    }
+
+    .navbarMovile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: whitesmoke;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .navLink-movile{
+        margin-left: 40px;
+        font-size: 1.1rem;
+        font-family: "Nunito";
+        font-weight: 500px; 
+        margin-top: 3px;
+    }
+
+    .navList-movile{
+        list-style: none;
+        padding: 20px;
+        margin-bottom: 15px
+
+    }
+    .navList-movile a {
+        color: #ff595e;
+        position: relative;
+    }
+
+    .navLink-movile a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        left: 0;
+        background-color: var(#8ac926);
+        opacity: 0;
+        transition: all 0.3s ease-in-out; 
+    }
+    .navLink-movile:hover a::after {
+        opacity: 1;
+    }
+    .navbarToggle-btn{
+        display: block;
+        margin: 0%;
+    }
+
+.navbarToggle-btn img {
+    height: 28px;
+    margin: 0px 10px;
+
+}
+
+    }
+    @media only screen and (max-width: 610px) {
+       
+        .searchIcon {
+            display: none;
+        }
+        .button-nene-trabajos{
+            margin: 0;
+        }
+    }
