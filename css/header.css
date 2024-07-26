@@ -59,10 +59,10 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 10px;
+    height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(#8ac926);
+    background-color: #8ac926;
     opacity: 0;
     transition: all 0.3s ease-in-out; 
 }
